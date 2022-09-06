@@ -1,0 +1,209 @@
+/* Logo-color #2196F3 #000000  */
+/* text-color #212121 #757575 */
+/* blue #2196F3 */
+/* white #FFFFFF */
+/* footer color: rgba(255, 255, 255, 0.6); */
+/* background color #FFFFFF #2F303A #F5F5F5 #F5F4FA  */
+:root {
+	--primary-text-color: #212121;
+	--paragraph-text-color: #757575;
+	--accent-color: #2196f3;
+	--primary-white-color: #ffffff;
+	--secondary-color: #f5f4fa;
+	--bg-secondary-color: #2f303a;
+}
+
+body {
+	background: var(--primary-white-color);
+	color: var(--primary-text-color);
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+
+.text {
+	color: var(--paragraph-text-color);
+	/* font-size: 14px; */
+	line-height: 1.71;
+}
+
+.list {
+	list-style: none;
+}
+
+/* Logo */
+.logo > span:hover,
+.logo > span:focus {
+	color: var(--accent-color);
+}
+
+.logo {
+	color: var(--accent-color);
+	font-family: Raleway, sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: none;
+}
+.logo-header {
+	color: #000000;
+}
+
+.logo-footer {
+	color: var(--primary-white-color);
+}
+
+/* Site-nav */
+
+.site-nav .link {
+	color: var(--primary-text-color);
+	font-weight: 500;
+	/* font-size: 14px; */
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+
+.site-con .link {
+	font-weight: 500;
+	/* font-size: 14px; */
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+.site-con .link:hover,
+.site-con .link:focus {
+	color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+}
+
+.hero-title {
+	color: var(--primary-white-color);
+	/* color: #000000; */
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	/* or 136% */
+
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+/* Section */
+.section-title {
+	/* color: #212121; */
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+
+/* feature */
+.feature-list .title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+/* Team */
+.team-list .title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	/* identical to box height */
+
+	/* text-align: center; */
+}
+
+.team-list .text {
+	font-size: 16px;
+	line-height: 1.19;
+}
+
+/* footer */
+.footer-list a {
+	color: var(--primary-white-color);
+	font-size: 14px;
+	line-height: 1.71;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.footer-list .footer-list-link {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+	color: var(--accent-color);
+}
+
+.hero-bg {
+	text-align: center;
+	background-color: var(--bg-secondary-color);
+}
+
+.footer-bg {
+	background-color: var(--bg-secondary-color);
+}
+/* Button */
+
+.button {
+	font-family: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+.button.primary {
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+}
+.button.secondary {
+	color: var(--primary-text-color);
+	background-color: var(--secondary-color);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+	color: var(--primary-white-color);
+	background-color: var(--accent-color);
+}
+
+/* portfolio */
+
+.filter-list .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+
+	letter-spacing: 0.06em;
+}
+
+.filter-list .text {
+	font-size: 16px;
+	line-height: 1.88;
+
+	letter-spacing: 0.03em;
+}
