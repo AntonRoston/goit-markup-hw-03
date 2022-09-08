@@ -13,6 +13,27 @@
 	--bg-secondary-color: #2f303a;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+	margin: 0;
+}
+ul {
+	padding: 0;
+}
+
+.conteiner {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
 body {
 	background: var(--primary-white-color);
 	color: var(--primary-text-color);
@@ -87,21 +108,45 @@ body {
 
 /* Hero */
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
+	max-width: 696px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
 	color: var(--primary-white-color);
-	/* color: #000000; */
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	/* or 136% */
 
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
 /* Section */
+
+/* Hide heading */
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .section-title {
 	/* color: #212121; */
 	font-weight: 700;
@@ -111,6 +156,15 @@ body {
 }
 
 /* feature */
+
+.title {
+	margin-bottom: 10px;
+}
+
+.feature {
+	padding-bottom: 47px;
+}
+
 .feature-list .title {
 	font-weight: 700;
 	font-size: 14px;
@@ -118,7 +172,17 @@ body {
 	text-transform: uppercase;
 }
 
+/* Work */
+.work {
+	padding-top: 47px;
+}
+
 /* Team */
+
+.team {
+	background-color: var(--secondary-color);
+}
+
 .team-list .title {
 	font-weight: 500;
 	font-size: 16px;
@@ -134,6 +198,15 @@ body {
 }
 
 /* footer */
+.logo.footer {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer-list li {
+	margin-bottom: 9px;
+}
+
 .footer-list a {
 	color: var(--primary-white-color);
 	font-size: 14px;
@@ -157,6 +230,8 @@ body {
 }
 
 .footer-bg {
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background-color: var(--bg-secondary-color);
 }
 /* Button */
@@ -165,13 +240,18 @@ body {
 	font-family: inherit;
 	text-decoration: none;
 	cursor: pointer;
+	border-radius: 4px;
+	border: none;
 }
 .button.primary {
+	padding: 10px 32px;
+
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
+	letter-spacing: 0.06em;
 }
 .button.secondary {
 	color: var(--primary-text-color);
@@ -194,6 +274,7 @@ body {
 /* portfolio */
 
 .filter-list .title {
+	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
