@@ -368,9 +368,17 @@ img {
 	margin-bottom: 30px;
 	/* border: 1px solid #eeeeee; */
 }
-.border {
-	border: 1px solid #eeeeee;
+
+.border{
+	border:1px solid #eeeeee ;
+	border-top: transparent;
 }
+
+/* .border {
+	border-bottom:1px solid #eeeeee;
+	border-left:1px solid #eeeeee;
+	border-right:1px solid #eeeeee;
+} */
 
 .filter-item:nth-child(3n) {
 	margin-right: 0;
