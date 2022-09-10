@@ -245,12 +245,12 @@ body {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team-item::last-child {
+.team-list .team-item:last-child {
 	margin-right: 0;
 }
 
 .team-list .title {
-	padding-top: 30px;
+	margin-top: 30px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -258,7 +258,7 @@ body {
 }
 
 .team-list .text {
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 
 	font-size: 16px;
 	line-height: 1.19;
@@ -300,6 +300,10 @@ body {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: var(--bg-secondary-color);
+}
+
+.footer-list li:last-child {
+	margin: 0;
 }
 /* Button */
 
@@ -351,10 +355,11 @@ img {
 
 .filter-button {
 	display: flex;
-	width: 575px;
-	margin: auto;
-	justify-content: space-around;
-	padding-bottom: 50px;
+	gap: 9px;
+	/* width: 575px;
+	margin: auto; */
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .filter-list {
@@ -370,6 +375,11 @@ img {
 }
 
 .border {
+	padding-top: 20px;
+	padding-right: 24px;
+	padding-bottom: 20px;
+	padding-left: 24px;
+
 	border: 1px solid #eeeeee;
 	border-top: transparent;
 }
@@ -389,8 +399,8 @@ img {
 }
 
 .filter-list .title {
-	padding-top: 20px;
-	padding-left: 24px;
+	/* padding-top: 20px;
+	padding-left: 24px; */
 
 	margin-bottom: 4px;
 	font-weight: 700;
@@ -401,8 +411,8 @@ img {
 }
 
 .filter-list .text {
-	padding-bottom: 20px;
-	padding-left: 24px;
+	/* padding-bottom: 20px;
+	padding-left: 24px; */
 
 	font-size: 16px;
 	line-height: 1.88;
